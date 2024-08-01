@@ -1,7 +1,7 @@
     app:
         name: MySQL
         code: mysql
-        notify: appzdev@cloudbourne.co
+        notify: apatnaik@cloudbourne.co
 
     build:
         version: 5.7
@@ -11,10 +11,9 @@
         image_template: mysql-5.7
 
     deploy:
-        context: alpha/DEV
+        context: amanecloud/DEV
         type: statefulset
         replicas: 1
-        resources: x-large
         ingress: none
         port:
         - 3306
@@ -23,17 +22,17 @@
       - claim: mysql-data
         mount: /var/lib/mysql
         name: data
-        size: 5Gi
+        size: 250Gi
       - claim: mysql-backup
         mount: /appz/backup
         name: backup
-        size: 5Gi
+        size: 250Gi
 
     properties:
         MYSQL_ROOT_PASSWORD:
           vault: MYSQL_ROOT_PASSWORD_KEY
-        MYSQL_SPRINGBOOTWEB_PASSWORD:
-          vault: MYSQL_SPRINGBOOTWEB_PASSWORD
-        MYSQL_WORDPRESS_PASSWORD:
-          vault: MYSQL_WORDPRESS_PASSWORD
-        revision : 25
+        MYSQL_TRACKER_PASSWORD:
+          vault: MYSQL_TRACKER_PASSWORD
+        MYSQL_ECLOUDCONTROL_PASSWORD:
+          vault: MYSQL_ECLOUDCONTROL_PASSWORD
+        revision : 41
