@@ -30,7 +30,7 @@
 
     properties:
         MYSQL_ROOT_PASSWORD:
-          vault: MYSQL_ROOT_PASSWORD_KEY
+          vault: MYSQL_ROOT_PASSWORD
         MYSQL_TRACKER_PASSWORD:
           vault: MYSQL_TRACKER_PASSWORD
         MYSQL_ECLOUDCONTROL_PASSWORD:
