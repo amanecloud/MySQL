@@ -1,7 +1,7 @@
  app:
         name: MySQL
         code: mysql
-        notify: apeethambaran@ecloudcontrol.com
+        notify: apatnaik@ecloudcontrol.com
 
     build:
         version: 5.7
@@ -11,7 +11,7 @@
         image_template: mysql-5.7
 
     deploy:
-        context: anandp0/DEV
+        context: amanecloud/DEV
         type: statefulset
         replicas: 1
         resources: x-large
