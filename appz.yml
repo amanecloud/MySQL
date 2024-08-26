@@ -1,4 +1,5 @@
- app:
+
+    app:
         name: MySQL
         code: mysql
         notify: apatnaik@ecloudcontrol.com
@@ -36,4 +37,6 @@
           vault: MYSQL_SPRINGBOOTWEB_PASSWORD
         MYSQL_WORDPRESS_PASSWORD:
           vault: MYSQL_WORDPRESS_PASSWORD
-        revision : 7
+        revision : 5
+
+       
