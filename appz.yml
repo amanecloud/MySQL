@@ -1,7 +1,7 @@
     app:
         name: MySQL
         code: mysql
-        notify: apatnaik@cloudbourne.co
+        notify: apatnaik@cloudbourne.com
 
     build:
         version: 5.7
