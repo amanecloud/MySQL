@@ -31,7 +31,7 @@
 
     properties:
         MYSQL_ROOT_PASSWORD:
-          vault: MYSQL_ROOT_PASSWORD_KEY
+          vault: MYSQL_ROOT_PASSWORD
         MYSQL_SPRINGBOOTWEB_PASSWORD:
           vault: MYSQL_SPRINGBOOTWEB_PASSWORD
         MYSQL_WORDPRESS_PASSWORD:
