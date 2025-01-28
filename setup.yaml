@@ -1,26 +1,18 @@
-
 users:
-  - name: springboot-web
+  - name: tracker
     password: $MYSQL_SPRINGBOOTWEB_PASSWORD
   - name: wordpress
     password: $MYSQL_WORDPRESS_PASSWORD
     
 databases:
-  - name: springboot-web
+  - name: tracker
   - name: wordpress
   
 acl:
-  - database: springboot-web
-    user: springboot-web
+  - database: tracker
+    user: tracker
     access: ALL
   - database: wordpress
     user: wordpress
     access: ALL  
-    
-restore:
-  - database: springboot-web
-    source:
-       url: 'https://www.ecloudcontrol.com/wp-content/uploads/2020/12/accountdb_20201210.zip'
-    user: root
-    password: $MYSQL_ROOT_PASSWORD  # password of the 'user' above.
-    token: 20210318-1843  # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+
